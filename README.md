@@ -36,6 +36,7 @@ briefer
 Technologies that I'm using in this project:
 
 * ***Briefer***: Notebook that transform data into dashboards.
+* ***DBT***: See this topic bellow.
 * ***Postgres***: The database used.
 * ***Render***: The open source host to database.
 * ***AWS***: The not open source host to database.
@@ -43,10 +44,10 @@ Technologies that I'm using in this project:
 
 ### Dbt:
 
-Dbt is a medallion architecture that clean the data into db views:
+Dbt is used to do a medallion architecture that clean the data into db views:
 
 * ***Raw***: The origin data, all the db register;
 * ***Bronze***: The first version of medallion, where contains all data;
 * ***Silver***: The layer where clean all the wrong data;
-* ***Gold Sales for Seller***: 
-* ***Gold 7 days***:
+* ***Gold Sales for Seller***: A totally cleaned view to get sales for seller data;
+* ***Gold Sales Seven days***: A totally cleaned view to get the last seven days sales data;
