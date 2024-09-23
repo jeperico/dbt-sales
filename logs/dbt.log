@@ -1,0 +1,31 @@
+[0m22:15:59.432882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712a0a0f3be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712a0a496530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712a0a496590>]}
+
+
+============================== 22:15:59.437467 | 7b0a4bb8-678d-4536-b5ec-ffc1350d7dfc ==============================
+[0m22:15:59.437467 [info ] [MainThread]: Running with dbt=1.8.6
+[0m22:15:59.438285 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/perico/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init sales_dbt', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:15:59.453699 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/perico/.dbt')}
+[0m22:15:59.454448 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m22:15:59.458034 [debug] [MainThread]: Starter project path: /home/perico/work/pipeline-ai/.venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m22:15:59.466307 [info ] [MainThread]: 
+Your new dbt project "sales_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:15:59.467633 [info ] [MainThread]: Setting up your profile.
+[0m22:17:42.207566 [info ] [MainThread]: Profile sales_dbt written to /home/perico/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:17:42.211688 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 102.84911, "process_user_time": 1.839373, "process_kernel_time": 0.172027, "process_mem_max_rss": "89784", "process_in_blocks": "52928", "process_out_blocks": "80"}
+[0m22:17:42.214314 [debug] [MainThread]: Command `dbt init` succeeded at 22:17:42.213852 after 102.85 seconds
+[0m22:17:42.215933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712a0a0f3be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712a0a496380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712a0a4943a0>]}
+[0m22:17:42.217373 [debug] [MainThread]: Flushing usage events
