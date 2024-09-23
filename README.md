@@ -1,3 +1,14 @@
+# Project:
+
+Criação de uma plataforma de CRM, onde são inseridos os dados da venda, onde então são enviados para um banco de dados hospedado na Render.
+
+
+## Avaliable at:
+
+* Project website: https://pipeline-ai.streamlit.app/
+* Project documentation: https://jeperico.github.io/crm-sales/
+
+
 ## Briefer
 
 To install _Briefer_ in your Python project:
@@ -19,3 +30,23 @@ briefer
 
 > Sales Quantity per Cost:
 ![Sales Quantity per Cost](charts/sales-quantity-per-cost.png)
+
+
+## Stack:
+Technologies that I'm using in this project:
+
+* ***Briefer***: Notebook that transform data into dashboards.
+* ***Postgres***: The database used.
+* ***Render***: The open source host to database.
+* ***AWS***: The not open source host to database.
+* ***Makefile***: Used to do prompt shortcuts.
+
+### Dbt:
+
+Dbt is a medallion architecture that clean the data into db views:
+
+* ***Raw***: The origin data, all the db register;
+* ***Bronze***: The first version of medallion, where contains all data;
+* ***Silver***: The layer where clean all the wrong data;
+* ***Gold ***: 
+* ***Gold ***:
