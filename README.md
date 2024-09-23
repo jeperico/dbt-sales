@@ -48,5 +48,5 @@ Dbt is a medallion architecture that clean the data into db views:
 * ***Raw***: The origin data, all the db register;
 * ***Bronze***: The first version of medallion, where contains all data;
 * ***Silver***: The layer where clean all the wrong data;
-* ***Gold ***: 
-* ***Gold ***:
+* ***Gold Sales for Seller***: 
+* ***Gold 7 days***:

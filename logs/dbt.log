@@ -29,3 +29,61 @@ Happy modeling!
 [0m22:17:42.214314 [debug] [MainThread]: Command `dbt init` succeeded at 22:17:42.213852 after 102.85 seconds
 [0m22:17:42.215933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712a0a0f3be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712a0a496380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712a0a4943a0>]}
 [0m22:17:42.217373 [debug] [MainThread]: Flushing usage events
+[0m22:34:42.063417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72179f1dfc40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72179d9b25c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72179d9b2530>]}
+
+
+============================== 22:34:42.066904 | 55af9bc8-fa80-405f-839a-68e667cf5f51 ==============================
+[0m22:34:42.066904 [info ] [MainThread]: Running with dbt=1.8.6
+[0m22:34:42.067829 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/perico/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:34:42.078394 [info ] [MainThread]: dbt version: 1.8.6
+[0m22:34:42.079208 [info ] [MainThread]: python version: 3.10.12
+[0m22:34:42.079876 [info ] [MainThread]: python path: /home/perico/work/pipeline-ai/.venv/bin/python3
+[0m22:34:42.080858 [info ] [MainThread]: os info: Linux-6.8.0-45-generic-x86_64-with-glibc2.35
+[0m22:34:42.169048 [info ] [MainThread]: Using profiles dir at /home/perico/.dbt
+[0m22:34:42.169825 [info ] [MainThread]: Using profiles.yml file at /home/perico/.dbt/profiles.yml
+[0m22:34:42.170419 [info ] [MainThread]: Using dbt_project.yml file at /home/perico/work/pipeline-ai/dbt_project.yml
+[0m22:34:42.171568 [info ] [MainThread]: adapter type: postgres
+[0m22:34:42.172189 [info ] [MainThread]: adapter version: 1.8.2
+[0m22:34:42.172794 [info ] [MainThread]: Configuration:
+[0m22:34:42.173361 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:34:42.173898 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:34:42.174507 [info ] [MainThread]: Required dependencies:
+[0m22:34:42.175420 [debug] [MainThread]: Executing "git --help"
+[0m22:34:42.178989 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:34:42.180487 [debug] [MainThread]: STDERR: "b''"
+[0m22:34:42.181544 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:34:42.182658 [info ] [MainThread]: Connection:
+[0m22:34:42.183708 [info ] [MainThread]:   host: dpg-crh5ktl6l47c73c2uhpg-a.oregon-postgres.render.com
+[0m22:34:42.186421 [info ] [MainThread]:   port: 5432
+[0m22:34:42.187692 [info ] [MainThread]:   user: root
+[0m22:34:42.188801 [info ] [MainThread]:   database: pipelineai
+[0m22:34:42.190075 [info ] [MainThread]:   schema: public
+[0m22:34:42.191081 [info ] [MainThread]:   connect_timeout: 10
+[0m22:34:42.192270 [info ] [MainThread]:   role: None
+[0m22:34:42.193684 [info ] [MainThread]:   search_path: None
+[0m22:34:42.195218 [info ] [MainThread]:   keepalives_idle: 0
+[0m22:34:42.196636 [info ] [MainThread]:   sslmode: None
+[0m22:34:42.198698 [info ] [MainThread]:   sslcert: None
+[0m22:34:42.200320 [info ] [MainThread]:   sslkey: None
+[0m22:34:42.201987 [info ] [MainThread]:   sslrootcert: None
+[0m22:34:42.203718 [info ] [MainThread]:   application_name: dbt
+[0m22:34:42.205571 [info ] [MainThread]:   retries: 1
+[0m22:34:42.207492 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m22:34:42.213580 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m22:34:42.279261 [debug] [MainThread]: Using postgres connection "debug"
+[0m22:34:42.280253 [debug] [MainThread]: On debug: select 1 as id
+[0m22:34:42.280814 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:34:43.964146 [debug] [MainThread]: SQL status: SELECT 1 in 1.683 seconds
+[0m22:34:43.965801 [debug] [MainThread]: On debug: Close
+[0m22:34:43.966719 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:34:43.967441 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:34:43.968054 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/perico/work/pipeline-ai/dbt_project.yml> not found
+
+[0m22:34:43.969168 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 2.011017, "process_user_time": 1.860508, "process_kernel_time": 0.111449, "process_mem_max_rss": "98544", "process_in_blocks": "6928", "process_out_blocks": "32", "command_success": false}
+[0m22:34:43.970067 [debug] [MainThread]: Command `dbt debug` failed at 22:34:43.969915 after 2.01 seconds
+[0m22:34:43.971154 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:34:43.972318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72179f1dfc40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72179d5c3af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72179d5d4e50>]}
+[0m22:34:43.974244 [debug] [MainThread]: Flushing usage events
