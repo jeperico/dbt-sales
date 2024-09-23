@@ -45,9 +45,10 @@ Technologies that I'm using in this project:
 ### Dbt:
 
 Dbt is used to do a medallion architecture that clean the data into db views:
+![Medallion Architecture](charts/medallion-architecture.png)
 
 * ***Raw***: The origin data, all the db register;
 * ***Bronze***: The first version of medallion, where contains all data;
 * ***Silver***: The layer where clean all the wrong data;
-* ***Gold Sales for Seller***: A totally cleaned view to get sales for seller data;
+* ***Gold Sales for Seller***: A totally cleaned view to get the sales data for a specific seller;
 * ***Gold Sales Seven days***: A totally cleaned view to get the last seven days sales data;

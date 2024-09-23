@@ -1,14 +1,20 @@
 makevenv:
-	python3 -m venv .venv
+    python3 -m venv .venv
 
 venv:
-	source .venv/bin/activate
+    source .venv/bin/activate
 
 briefer:
-	briefer
+    briefer
 
 debug:
-	dbt debug
+    dbt debug
 
 run:
-	dbt run
+    dbt run
+
+docs:
+    dbt docs generate
+
+rundocs:
+    dbt docs serve --port 8081

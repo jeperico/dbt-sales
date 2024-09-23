@@ -1,0 +1,69 @@
+version: 2
+
+models:
+  - name: gold_sales_seven_days
+    description: A totally cleaned view to get the last seven days sales data.
+    columns:
+      - name: day
+        description: The sale date.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['date']
+      - name: product
+        description: The product name.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['string']
+      - name: total_cost
+        description: The total cost of sales on this date.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['number']
+      - name: total_quantity
+        description: The total quantity of sales on this date.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['number']
+      - name: total_sales
+        description: The total transactions on this date.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['number']
+  - name: gold_sales_for_seller
+    description: A totally cleaned view to get the sales data for a specific seller.
+    columns:
+      - name: seller
+        description: The seller email.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['string']
+      - name: day
+        description: The sale date.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['date']
+      - name: total_cost
+        description: The total cost of sales for this seller.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['number']
+      - name: total_quantity
+        description: The total quantity of sales for this seller.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['number']
+      - name: total_sales
+        description: The total transactions for this seller.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['number']
