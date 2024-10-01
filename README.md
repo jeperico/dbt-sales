@@ -65,5 +65,4 @@ Technologies used in this project:
 * ***DBT***: See this topic bellow.
 * ***Postgres***: The database used.
 * ***Render***: The open source host to database.
-* ***AWS***: The not open source host to database.
 * ***Makefile***: Used to do prompt shortcuts.
